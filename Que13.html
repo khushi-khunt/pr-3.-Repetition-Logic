@@ -1,0 +1,27 @@
+<!-- 13.Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var n1=0,n2=1,n3;
+        var num = parseInt(prompt(`Enter any number :-`));
+   
+        document.write(`<h1>${n1} , ${n2}</h1> `);
+
+        for(var i=0;i<num-2;i++){
+             n3=n1+n2;
+             n1=n2;
+             n2=n3;
+             document.write(`<h1>${n3}</h1> `);
+        }
+    </script>
+</body>
+
+</html>
